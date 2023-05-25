@@ -1,0 +1,294 @@
+.navbar {
+    .heads {
+    .headtop {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 100px;
+        background-color: #ececec;
+        @media (max-width: 1240px) {
+            grid-template-columns: repeat(1,1fr);
+            gap: 0px;
+        }
+        .hdt1 {
+            display: flex;
+            align-items: center;
+            @media (max-width: 1240px) {
+                display: none;
+            }
+            p:nth-last-of-type(1) {
+                padding-left: 20px;
+            }
+        }
+
+        .hdt2 {
+            display: grid;
+            align-items: center;
+            text-align: center;
+            @media (max-width: 1240px) {
+                width: 100%;
+            }
+            @media (max-width: 320px) {
+                font-size: 15px;
+            }
+        }
+
+        .hdt3 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            @media (max-width: 1240px) {
+                display: none;
+            }
+            .uzbut {
+                width: 100px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                button {
+                    width: 100%;
+                    height: 100%;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .headcenter {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        padding-top: 20px;
+        @media (max-width: 680px) {
+            gap: 50%;
+        }
+        @media (max-width: 520px) {
+            gap: 40%;
+        }
+        @media (max-width: 430px) {
+            gap: 30%;
+        }
+        @media (max-width: 370px) {
+            gap: 20%;
+        }
+        @media (max-width: 340px) {
+            gap: 10%;
+        }
+        .hdlogo {
+            width: 200px;
+            height: 30px;
+            @media (max-width: 930px) {
+                width: 150px;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .hdbtn1 {
+            width: 120px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            background-color: #EAEAF9;
+            padding-left: 10px;
+            border-radius: 5px;
+            margin-left: 30px;
+            transition: .5s;
+            cursor: pointer;
+            @media (max-width: 1060px) {
+                width: 100px;
+            }
+            @media (max-width: 930px) {
+                display: none;
+            }
+            button {
+                width: 100%;
+                height: 100%;
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        .hdbtn1:hover {
+            background-color: #d0d0d4;
+        }
+        .search {
+            display: flex;
+            align-items: center;
+            width: 500px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid #D6D7D9;
+            margin-right: 20px;
+            transition: .2s;
+            gap: 5px;
+            @media (max-width: 1060px) {
+                width: 400px;
+            }
+            @media (max-width: 930px) {
+                width: 600px;
+                border-radius: 10px;
+            }
+            @media (max-width: 920px) {
+                width: 550px;             
+            }
+            @media (max-width: 880px) {
+                width: 500px; 
+            }
+            @media (max-width: 860px) {
+                width: 450px; 
+            }
+            @media (max-width: 770px) {
+                width: 400px; 
+            }
+            @media (max-width: 720px) {
+                width: 350px; 
+            }
+            @media (max-width: 680px) {
+                display: none;
+            }
+            input {
+                width: 100%;
+                height: 100%;
+                background: none;
+                border: none;
+                outline: none;
+                padding-left: 15px;
+            }
+            .searchbtn {
+                width: auto;
+                height: 100%;
+                background-color: #F5F5F5;
+                padding: 5px 15px;
+                border-radius: 0px 5px 5px 0px;
+                @media (max-width: 930px) {
+                    background: none;
+                }
+            }
+        }
+        .search:hover {
+            border: 1px solid #9fa0a2;
+        }
+
+        .shops {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+            @media (max-width: 1280px) {
+                
+            }
+            .sh1 {
+                display: flex;
+                align-items: center;
+                a {
+                    color: #000;
+                    padding-left: 10px;
+                    
+                }
+                @media (max-width: 1280px) {
+                a {
+                    display: none;
+                }
+                }
+            }
+
+            .sh2 {
+                display: flex;
+                align-items: center;
+                a {
+                    color: #000;
+                    padding-left: 10px;
+                }
+                @media (max-width: 1280px) {
+                a {
+                    display: none;
+                }
+                }
+            }
+
+            .sh3 {
+                display: flex;
+                align-items: center;
+                a {
+                    color: #000;
+                    padding-left: 10px;
+                }
+                @media (max-width: 1280px) {
+                a {
+                    display: none;
+                }
+                }
+            }
+        }
+    }
+
+    .headbottom {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        @media (max-width: 680px) {
+            padding-top: 10px;
+        }
+        .minisearch {   
+            width: 100%;
+            height: 35px;
+            border-radius: 10px;
+            border: 1px solid #D6D7D9;
+            display: none;
+            @media (max-width: 680px) {
+                display: inline;
+            }
+            input {
+                width: 100%;
+                height: 100%;
+                background: none;
+                border: none;
+                outline: none;
+                padding-left: 15px;
+            }
+        }
+        .hdlinks  {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           
+            @media (max-width: 1250px) {
+                display: none;
+            }
+            ul {
+                a {
+                    color: grey;
+                    padding: 10px;
+                    font-size: 14px;
+                    transition: 0.5s;
+                    border-radius: 5px;
+                    
+                }
+                a:hover {
+                    color: black;
+                    background-color: rgb(223, 218, 218);
+                }
+            }
+        }
+        .main {
+                display: flex;
+                align-items: center;
+                color: grey;
+                @media (max-width: 1240px) {
+                    display: none;
+                }
+            }
+    }
+    }
+
+}
+
+// @media (max-width: 860px){
+//     .search {
+//         width: 262px;
+//     }
+// }
